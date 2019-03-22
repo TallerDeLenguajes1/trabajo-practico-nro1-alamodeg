@@ -10,17 +10,15 @@ vi) Utilice la función anterior para leer pares de valores e imprimirlos por pa
 //-PROTOTIPOs-//
 int cuadrado(int *num);
 //------------//
-int main(){
+void main(){
 	int numero = 4;
-	int *puntero= numero;
+	int *puntero= &numero;
 
 	//resultado = cuadrado(numero);
 	printf("El resultado de %d al cuadrado es: ",numero);
-	cuadrado(&numero);
-	printf("%d",numero);
+	cuadrado(puntero);
+	printf("%d",*puntero);
 
-	return 0;	
- 
 }
 int cuadrado(int *num){
 	return *num = *num * *num;
