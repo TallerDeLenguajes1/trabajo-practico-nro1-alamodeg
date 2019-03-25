@@ -77,3 +77,19 @@ void Ordenar (int *num1,int *num2){
 	}
 }
 //Utilice la función anterior para leer pares de valores e imprimirlos por pantalla de forma ordenada
+
+//FORMA CORRECTA DE REALIZAR LOS ENVIOS DE PUNTEROS//
+/*void Cuadrado2(int num1,int *resultado);
+
+void main(){
+	int numero = 4;
+	int resultado;
+
+	Cuadrado2(numero,&resultado);
+	printf("%d\n",resultado);
+
+}
+
+void Cuadrado2(int num1,int *resultado){
+	*resultado = num1 * num1;
+}*/
